@@ -1,0 +1,914 @@
+<!--
+============================
+ZOHO CAMPAIGN METADATA
+============================
+from_email: pace@ucsb.edu
+campaign_name: Su25_ABA_Newsletter
+subject: Summer 2025 Applied Behavior Analysis | UCSB PaCE
+preheader: Join our exciting online program to launch your new career in behavior analysis
+topic_id: 869189000010274591
+list_details: Applied Behavior Analysis (869189000010274874)
+============================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied Behavior Analysis - Summer 2025 | UCSB PaCE</title>
+    
+    <!--
+    ==============================================
+    UCSB PaCE QUARTERLY NEWSLETTER TEMPLATE v2.0
+    ==============================================
+    
+    TEMPLATE IMPROVEMENTS (June 2025):
+    - Replaced full URL placeholders with actual URLs containing placeholder UTM tags
+    - Added testimonial blog linking capability
+    - All links now use consistent UTM parameter structure for better tracking
+    
+    PLACEHOLDER STRUCTURE:
+    
+    PROGRAM INFORMATION:
+    - {{PROGRAM_NAME}} - Display name of the program
+    - https://www.professional.ucsb.edu/applied-behavior-analysis - Base URL to program page (without UTM parameters)
+    - {{QUARTER_FULL}} - Full quarter name (e.g., "Summer 2025")
+    - aba - Campaign identifier (e.g., "par", "hr", "pm")
+    - Su25_ABA - Content identifier (e.g., "Su25_PAR", "W25_HRM")
+    
+    CONTENT PLACEHOLDERS:
+    - {{PROGRAM_DESCRIPTION}} - Program description paragraph
+    - {{COURSE_CARDS}} - Featured course cards section
+    - {{ADDITIONAL_COURSES_LIST}} - List of additional courses
+    - {{CERTIFICATE_DESCRIPTION}} - Certificate program description
+    - {{CERTIFICATE_PAGE_URL}} - Base URL to certificate page (without UTM parameters)
+    
+    TESTIMONIAL PLACEHOLDERS:
+    - {{TESTIMONIAL_QUOTE}} - The testimonial quote text (with quotes)
+    - {{TESTIMONIAL_AUTHOR}} - Name of the person giving testimonial
+    - {{TESTIMONIAL_AUTHOR_POSSESSIVE}} - Possessive form (his/her/their)
+    - {{TESTIMONIAL_BLOG_URL}} - Base URL to testimonial blog post (without UTM parameters)
+    
+    URL STRUCTURE:
+    All main content URLs now use the format:
+    {BASE_URL}?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA
+    
+    This provides better maintainability and consistency across newsletters.
+    -->
+    
+    <!-- Email-optimized CSS -->
+    <style>
+        /* Email-safe CSS - No animations, limited gradients, table-based layouts */
+        
+        /* Reset and base styles */
+        * { box-sizing: border-box; }        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            font-family: 'Arial', 'Helvetica', sans-serif !important;
+            font-size: 16px !important;
+            line-height: 1.6 !important;
+            color: #003660 !important;
+            background-color: #f5f5f5 !important;
+            -webkit-text-size-adjust: 100% !important;
+            -ms-text-size-adjust: 100% !important;
+        }
+        
+        /* Table reset */
+        table {
+            border-collapse: collapse !important;
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+        
+        /* Links */
+        a {
+            color: #1178b5 !important;
+            text-decoration: none !important;
+        }
+        a:hover {
+            color: #003660 !important;
+            text-decoration: underline !important;
+        }
+        
+        /* Images */
+        img {
+            border: 0 !important;
+            height: auto !important;
+            line-height: 100% !important;
+            outline: none !important;
+            text-decoration: none !important;
+            -ms-interpolation-mode: bicubic !important;
+            max-width: 100% !important;
+        }
+        
+        /* Container */
+        .email-container {
+            max-width: 600px !important;
+            margin: 0 auto !important;
+            background-color: #ffffff !important;
+        }
+        
+        /* Header */
+        .header-section {
+            background-color: #ffffff !important;
+            padding: 30px 20px !important;
+            text-align: center !important;
+        }
+        
+        .logo-img {
+            max-width: 350px !important;
+            height: auto !important;
+            margin-bottom: 20px !important;
+        }
+        
+        .program-title {
+            font-size: 28px !important;
+            font-weight: bold !important;
+            color: #003660 !important;
+            margin: 15px 0 10px 0 !important;
+            line-height: 1.2 !important;
+        }
+        
+        .quarter-badge {
+            display: inline-block !important;
+            background-color: #eaf3fa !important;
+            color: #1178b5 !important;
+            padding: 8px 20px !important;
+            border-radius: 25px !important;
+            font-weight: bold !important;
+            font-size: 16px !important;
+            margin: 10px 0 !important;
+            border: 2px solid #1178b5 !important;
+        }
+        
+        .subtitle {
+            color: #1178b5 !important;
+            font-size: 18px !important;
+            margin: 15px 0 !important;
+        }
+        
+        /* Discount banner */        .discount-banner {
+            background-color: #fff9e6 !important;
+            border: 2px solid #febc11 !important;
+            border-radius: 8px !important;
+            padding: 15px 20px !important;
+            margin: 20px 0 10px 0 !important;
+            text-align: center !important;
+        }
+        
+        .discount-text {
+            color: #003660 !important;
+            font-weight: bold !important;
+            font-size: 16px !important;
+            margin-bottom: 10px !important;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block !important;
+            background-color: #003660 !important;
+            color: #febc11 !important;
+            padding: 12px 30px !important;
+            border-radius: 25px !important;
+            text-decoration: none !important;
+            font-weight: bold !important;
+            font-size: 16px !important;
+            margin: 10px 5px !important;
+            border: 2px solid #003660 !important;
+        }
+        
+        .btn:hover {
+            background-color: #1178b5 !important;
+            border-color: #1178b5 !important;
+            color: #febc11 !important;
+            text-decoration: none !important;
+        }
+        
+        .btn-outline {
+            background-color: #ffffff !important;
+            color: #003660 !important;
+            border: 2px solid #003660 !important;
+        }
+        
+        .btn-outline:hover {
+            background-color: #003660 !important;
+            color: #febc11 !important;
+        }
+        
+        /* Content sections */
+        .content-section {
+            padding: 30px 20px !important;
+            background-color: #ffffff !important;
+        }
+        
+        .section-title {
+            font-size: 24px !important;
+            color: #003660 !important;
+            text-align: center !important;
+            margin: 0 0 25px 0 !important;
+            font-weight: bold !important;
+        }
+        
+        .program-description {
+            font-size: 18px !important;
+            color: #003660 !important;
+            text-align: center !important;
+            margin: 0 0 25px 0 !important;
+            line-height: 1.6 !important;
+        }
+        
+        /* Stats section */
+        .stats-section {
+            background-color: #f8f9fa !important;
+            padding: 25px 20px !important;
+            margin: 20px 0 !important;
+            border-radius: 8px !important;
+        }
+        
+        .stats-container {
+            text-align: center !important;
+        }
+        
+        .stat-item {
+            display: inline-block !important;
+            margin: 10px 15px !important;
+            text-align: center !important;
+            vertical-align: top !important;
+        }
+        
+        .stat-value {
+            display: block !important;
+            font-size: 32px !important;
+            font-weight: bold !important;
+            color: #1178b5 !important;
+            line-height: 1 !important;
+        }
+        
+        .stat-label {
+            display: block !important;
+            font-size: 14px !important;
+            color: #003660 !important;
+            margin-top: 5px !important;
+        }
+        
+        /* Course cards */        .courses-section {
+            background-color: #f5f7fa !important;
+            padding: 30px 20px !important;
+            margin: 10px 0 !important;
+        }
+        
+        .course-card {
+            background-color: #ffffff !important;
+            border: 1px solid #e1e8ed !important;
+            border-left: 5px solid #003660 !important;
+            border-radius: 8px !important;
+            padding: 20px !important;
+            margin: 15px 0 !important;
+        }
+        
+        .course-title {
+            font-size: 18px !important;
+            color: #1178b5 !important;
+            font-weight: bold !important;
+            margin: 0 0 5px 0 !important;
+        }
+          .course-code {
+            display: inline-block !important;
+            background-color: #eaf3fa !important;
+            color: #003660 !important;
+            padding: 4px 12px !important;
+            border-radius: 4px !important;
+            font-size: 14px !important;
+            font-weight: bold !important;
+            margin-right: 8px !important;
+        }
+          .course-badge {
+            display: inline-block !important;
+            background-color: #003660 !important;
+            color: #febc11 !important;
+            padding: 4px 12px !important;
+            border-radius: 4px !important;
+            font-size: 14px !important;
+            font-weight: bold !important;
+        }
+          .course-description {
+            color: #003660 !important;
+            font-size: 16px !important;
+            margin: 10px 0 15px 0 !important;
+            line-height: 1.5 !important;
+        }
+        
+        /* Additional Courses */
+        .additional-courses {
+            background-color: #f8f9fa !important;
+            border: 1px solid #e1e8ed !important;
+            border-radius: 8px !important;
+            padding: 20px !important;
+            margin: 25px 0 !important;
+            text-align: center !important;
+        }
+        
+        .additional-courses-title {
+            font-size: 18px !important;
+            color: #003660 !important;
+            font-weight: bold !important;
+            margin: 0 0 15px 0 !important;
+        }
+        
+        .additional-courses-list {
+            color: #1178b5 !important;
+            font-size: 16px !important;
+            margin: 0 !important;
+            line-height: 1.6 !important;
+        }
+          .additional-courses-list a {
+            color: #1178b5 !important;
+            text-decoration: none !important;
+            font-weight: bold !important;
+        }
+          /* Inline course styles for additional courses section */        .course-code-inline {
+            display: inline-block !important;
+            background-color: #eaf3fa !important;
+            color: #003660 !important;
+            padding: 2px 8px !important;
+            border-radius: 3px !important;
+            font-size: 11px !important;
+            font-weight: bold !important;
+            margin-right: 4px !important;
+        }
+          .course-type-inline {
+            display: inline-block !important;
+            background-color: #003660 !important;
+            color: #febc11 !important;
+            padding: 2px 8px !important;
+            border-radius: 3px !important;
+            font-size: 11px !important;
+            font-weight: bold !important;
+            margin-right: 6px !important;
+        }
+        
+        /* Certificate section */        .certificate-section {
+            background-color: #f0f7ff !important;
+            padding: 30px 20px !important;
+            margin: 10px 0 !important;
+            border-radius: 8px !important;
+            text-align: center !important;
+        }
+        
+        .certificate-title {
+            font-size: 24px !important;
+            color: #003660 !important;
+            margin: 0 0 15px 0 !important;
+            font-weight: bold !important;
+        }
+        
+        .certificate-description {
+            font-size: 16px !important;
+            color: #003660 !important;
+            margin: 0 0 20px 0 !important;
+            line-height: 1.6 !important;
+        }
+        
+        /* Testimonial */
+        .testimonial-section {
+            background-color: #f8f9fa !important;
+            padding: 25px 20px !important;
+            margin: 20px 0 !important;
+            border-left: 4px solid #1178b5 !important;
+            border-radius: 0 8px 8px 0 !important;
+        }
+        
+        .testimonial-text {
+            font-size: 18px !important;
+            color: #003660 !important;
+            font-style: italic !important;
+            text-align: center !important;
+            margin: 0 0 15px 0 !important;
+            line-height: 1.6 !important;
+        }
+        
+        .testimonial-author {
+            text-align: center !important;
+            color: #1178b5 !important;
+            font-weight: bold !important;
+            font-style: normal !important;
+        }
+        
+        /* CTA section */
+        .cta-section {
+            background-color: #003660 !important;
+            color: #ffffff !important;
+            padding: 30px 20px !important;
+            text-align: center !important;
+            margin: 20px 0 !important;
+        }
+        
+        .cta-title {
+            font-size: 24px !important;
+            color: #febc11 !important;
+            margin: 0 0 20px 0 !important;
+            font-weight: bold !important;
+        }
+        
+        .cta-btn {
+            background-color: #febc11 !important;
+            color: #003660 !important;
+            padding: 15px 40px !important;
+            font-size: 18px !important;
+            font-weight: bold !important;
+            border-radius: 25px !important;
+            text-decoration: none !important;
+            display: inline-block !important;
+            margin: 10px 0 !important;
+            border: 2px solid #febc11 !important;
+        }
+        
+        .cta-btn:hover {
+            background-color: #e6a600 !important;
+            border-color: #e6a600 !important;
+            color: #003660 !important;
+            text-decoration: none !important;
+        }
+        
+        /* Contact section */
+        .contact-section {
+            background-color: #f8f9fa !important;
+            padding: 30px 20px !important;
+        }
+        
+        .contact-card {
+            background-color: #ffffff !important;
+            border: 2px solid #003660 !important;
+            border-radius: 8px !important;
+            padding: 25px !important;
+            max-width: 500px !important;
+            margin: 0 auto !important;
+        }
+        
+        .contact-header {
+            text-align: center !important;
+            margin-bottom: 20px !important;
+        }
+        
+        .contact-logo {
+            max-width: 80px !important;
+            height: auto !important;
+            margin-bottom: 10px !important;
+        }
+        
+        .contact-org {
+            font-size: 20px !important;
+            font-weight: bold !important;
+            color: #003660 !important;
+        }
+        
+        .contact-item {
+            margin: 12px 0 !important;
+            font-size: 16px !important;
+            line-height: 1.5 !important;
+        }
+        
+        .contact-label {
+            font-weight: bold !important;
+            color: #003660 !important;
+            display: inline-block !important;
+            min-width: 80px !important;
+        }
+        
+        /* Contact card links */
+        .contact-item a {
+            color: #1178b5 !important;
+            text-decoration: none !important;
+            font-weight: bold !important;
+        }
+        
+        .contact-item a:hover {
+            color: #003660 !important;
+            text-decoration: none !important;
+        }
+        
+        /* Footer */
+        .footer-section {
+            background-color: #003660 !important;
+            color: #ffffff !important;
+            padding: 30px 20px !important;
+            text-align: center !important;
+        }
+        
+        .footer-logo {
+            max-width: 250px !important;
+            height: auto !important;
+            margin-bottom: 20px !important;
+        }
+        
+        .social-links {
+            margin: 20px 0 !important;
+        }
+        
+        .social-icon {
+            width: 36px !important;
+            height: 36px !important;
+            margin: 0 8px !important;
+            border-radius: 4px !important;
+        }
+        
+        .footer-links {
+            margin: 20px 0 !important;
+        }
+        
+        .footer-link {
+            color: #ffffff !important;
+            margin: 0 15px !important;
+            font-size: 14px !important;
+            text-decoration: none !important;
+        }
+        
+        .footer-link:hover {
+            color: #febc11 !important;
+            text-decoration: underline !important;
+        }
+        
+        .unsubscribe-text {
+            font-size: 12px !important;
+            color: #cccccc !important;
+            margin-top: 20px !important;
+            line-height: 1.5 !important;
+        }
+          .unsubscribe-link {
+            color: #febc11 !important;
+            text-decoration: none !important;
+        }
+          .unsubscribe-link:hover {
+            color: #febc11 !important;
+            text-decoration: underline !important;
+        }
+        
+        /* Digital Credentials section */        .digital-credentials-section {
+            background-color: #f0f8ff !important;
+            padding: 25px 20px !important;
+            margin: 10px 0 !important;
+            border-radius: 8px !important;
+            border: 1px solid #e1e8ed !important;
+        }
+        
+        .digital-credentials-title {
+            font-size: 24px !important;
+            color: #003660 !important;
+            font-weight: bold !important;
+            margin: 0 0 15px 0 !important;
+            text-align: center !important;
+        }
+        
+        .digital-credentials-text {
+            font-size: 16px !important;
+            color: #003660 !important;
+            margin: 0 0 20px 0 !important;
+            line-height: 1.6 !important;
+            text-align: center !important;
+        }
+        
+        .digital-credentials-features {
+            margin: 20px 0 !important;
+        }
+        
+        .digital-credentials-feature {
+            font-size: 15px !important;
+            color: #003660 !important;
+            margin: 8px 0 !important;
+            padding-left: 20px !important;
+            position: relative !important;
+        }
+        
+        .digital-credentials-feature:before {
+            content: "✓" !important;
+            color: #1178b5 !important;
+            font-weight: bold !important;
+            position: absolute !important;
+            left: 0 !important;
+        }
+        
+        /* Mobile responsiveness */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            
+            .header-section,
+            .content-section,
+            .courses-section,
+            .contact-section,
+            .footer-section {
+                padding: 20px 15px !important;
+            }
+            
+            .program-title {
+                font-size: 24px !important;
+            }
+            
+            .section-title {
+                font-size: 20px !important;
+            }
+            
+            .stat-item {
+                display: block !important;
+                margin: 15px 0 !important;
+            }
+            
+            .btn {
+                display: block !important;
+                margin: 10px 0 !important;
+                text-align: center !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Email container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f5f5f5;">
+        <tr>
+            <td align="center">
+                <div class="email-container">
+                    
+                    <!-- Header Section -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="header-section">                                <a href="https://www.professional.ucsb.edu/applied-behavior-analysis?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank">
+                                    <img src="https://www.professional.ucsb.edu/sites/default/files/2025-05/Logo_PaCE_2025_Full.png" 
+                                         alt="UCSB PaCE Logo" class="logo-img">
+                                </a>
+                                
+                                <h1 class="program-title">
+                                    <a href="https://www.professional.ucsb.edu/applied-behavior-analysis?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" style="color: #003660 !important; text-decoration: none !important;">
+                                        Applied Behavior Analysis
+                                    </a>
+                                </h1>
+                                
+                                <div class="quarter-badge">Summer 2025</div>
+                                
+                                <p class="subtitle">Advance your career with UCSB Professional and Continuing Education</p>
+                                
+                                <!-- Discount Banner -->
+                                <div class="discount-banner">
+                                    <div class="discount-text">Save with PaCE Discounts!</div>
+                                    <a href="https://www.professional.ucsb.edu/ucsb-students-staff-faculty-discount?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" 
+                                       target="_blank" class="btn btn-outline">See Available Discounts</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <!-- Main Content Section -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="content-section">
+                                <!-- Program Description -->
+                                <p class="program-description">Join our exciting online program to launch your new career in behavior analysis. There is a <strong>growing need for well-trained certified behavior analysts globally</strong>. Our applied behavior analysis (ABA) programs are designed to train professionals who are passionate about helping people. Our research-driven curriculums cover a wide range of topics including <strong>concepts and theories of ABA, behavior assessments, ethical guidelines, and behavior interventions and applications</strong>. With working professionals in mind, we designed our programs to be <strong>affordable and flexible, without compromising quality of instruction</strong>.</p>
+                                
+                                <!-- Stats Section -->
+                                <div class="stats-section">
+                                    <div class="stats-container">
+                                        <div class="stat-item">                                            <span class="stat-value">5.8%</span>
+                                            <span class="stat-label">increase in demand</span>
+                                        </div>
+                                        <div class="stat-item">                                            <span class="stat-value">59K</span>
+                                            <span class="stat-label">active BCBAs</span>
+                                        </div>
+                                        <div class="stat-item">                                            <span class="stat-value">$75K</span>
+                                            <span class="stat-label">average annual income</span>
+                                        </div>
+                                        <div class="stat-item">                                            <span class="stat-value">Growing</span>
+                                            <span class="stat-label">career opportunities</span>
+                                        </div>
+                                    </div>
+                                    <p style="text-align: center; margin-top: 15px; font-size: 14px;">
+                                        Source: <a href="https://www.professional.ucsb.edu/statistics?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" style="font-weight: bold;">UCSB PaCE Statistics</a>
+                                    </p>
+                                </div>
+                                  <div style="text-align: center; margin: 25px 0;">
+                                    <a href="https://www.professional.ucsb.edu/applied-behavior-analysis?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" class="btn">Start Your Journey</a>
+                                </div>                                <div style="text-align: center; background-color: #f0f7ff; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                                    <a href="https://www.professional.ucsb.edu/pace-financial-assistance?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" style="color: #1178b5 !important; font-weight: bold;">
+                                        💡 Financial Assistance is available – Learn more
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <!-- Digital Credentials Section -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="content-section" style="padding: 10px 20px !important;">
+                                <div class="digital-credentials-section">
+                                    <h2 class="digital-credentials-title">Earn Digital Badges</h2>
+                                    <p class="digital-credentials-text">
+                                        <strong>Showcase your professional accomplishments</strong> with verifiable digital badges that highlight the specific competencies you've acquired through our Applied Behavior Analysis program.
+                                    </p>
+                                    <div class="digital-credentials-features">
+                                        <div class="digital-credentials-feature">Focused on your skills - showcase specific professional competencies</div>
+                                        <div class="digital-credentials-feature">Easily shareable on LinkedIn and social media platforms</div>
+                                        <div class="digital-credentials-feature">Verifiable proof of course completion for employers</div>
+                                        <div class="digital-credentials-feature">Trackable impact across professional networks</div>
+                                        <div class="digital-credentials-feature">Issued faster than traditional credentials</div>
+                                    </div>
+                                    <div style="text-align: center; margin-top: 25px;">
+                                        <a href="https://www.professional.ucsb.edu/blog-digital-badges?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" class="btn btn-outline">Learn About Digital Badges</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                      <!-- Testimonial Section -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="content-section">                                <div class="testimonial-section">
+                                    <p class="testimonial-text">
+The most rewarding part of being a behavior analyst is knowing that your work makes a real difference in people's lives. UCSB PaCE's program gave me the foundation and confidence to pursue this meaningful career path.
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <!-- WITH BLOG LINK: Use this format when testimonial has a source blog post -->                                        – Sarah Chen, BCBA Graduate
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <!-- Courses Section -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="courses-section">
+                                <h2 class="section-title">Multiple Certification Pathways Available</h2>
+                                  <!-- ABA Programs Overview -->
+                                <div class="course-card">
+                                    <h3 class="course-title">
+                                        <a href="https://www.professional.ucsb.edu/certificate-board-certified-behavior-analyst?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" style="color: #1178b5 !important; text-decoration: none !important;">
+                                            Board Certified Behavior Analyst (BCBA)
+                                        </a>
+                                    </h3>
+                                    <div style="margin-bottom: 10px;">
+                                        <span class="course-badge">Master's Degree Required</span>
+                                    </div>
+                                    <p class="course-description">Recommended for anyone with a Master's degree residing in the US, UK, Australia, and Canada.</p>
+                                    <a href="https://www.professional.ucsb.edu/certificate-board-certified-behavior-analyst?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" class="btn btn-outline">Learn More</a>
+                                </div>
+                                
+                                <div class="course-card">
+                                    <h3 class="course-title">
+                                        <a href="https://www.professional.ucsb.edu/certificate-board-certified-assistant-behavior-analyst?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" style="color: #1178b5 !important; text-decoration: none !important;">
+                                            Board Certified Assistant Behavior Analyst (BCaBA)
+                                        </a>
+                                    </h3>
+                                    <div style="margin-bottom: 10px;">
+                                        <span class="course-badge">Bachelor's Degree Required</span>
+                                    </div>
+                                    <p class="course-description">Recommended for anyone with a bachelor's degree residing in the US, Canada, UK, or Australia.</p>
+                                    <a href="https://www.professional.ucsb.edu/certificate-board-certified-assistant-behavior-analyst?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" class="btn btn-outline">Learn More</a>
+                                </div>
+                                
+                                <div class="course-card">
+                                    <h3 class="course-title">
+                                        <a href="https://www.professional.ucsb.edu/certificate-qualified-behavior-analyst?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" style="color: #1178b5 !important; text-decoration: none !important;">
+                                            Qualified Behavior Analyst (QBA)
+                                        </a>
+                                    </h3>
+                                    <div style="margin-bottom: 10px;">
+                                        <span class="course-badge">Master's Degree Required</span>
+                                    </div>
+                                    <p class="course-description">Recommended for anyone with a Master's degree residing anywhere in the world.</p>
+                                    <a href="https://www.professional.ucsb.edu/certificate-qualified-behavior-analyst?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" class="btn btn-outline">Learn More</a>
+                                </div>
+                                
+                                <div class="course-card">
+                                    <h3 class="course-title">
+                                        <a href="https://www.professional.ucsb.edu/certificate-qualified-autism-service-practitioner-supervisor?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" style="color: #1178b5 !important; text-decoration: none !important;">
+                                            Qualified Autism Service Practitioner-Supervisor (QASP-S)
+                                        </a>
+                                    </h3>
+                                    <div style="margin-bottom: 10px;">
+                                        <span class="course-badge">Bachelor's Degree Required</span>
+                                    </div>
+                                    <p class="course-description">Recommended for anyone with a bachelor's degree residing anywhere in the world.</p>
+                                    <a href="https://www.professional.ucsb.edu/certificate-qualified-autism-service-practitioner-supervisor?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" class="btn btn-outline">Learn More</a>
+                                </div>
+                                
+                                <!-- Additional Programs Section -->
+                                <div class="additional-courses">
+                                    <div class="additional-courses-title">Additional specialized training available:</div>
+                                    <div class="additional-courses-list">
+                                        <strong>Behavior Supports & Systems</strong> - Specialized 40-hour trainings in various ABA topics
+                                    </div>
+                                    <div style="text-align: center; margin-top: 20px;">
+                                        <a href="https://www.professional.ucsb.edu/applied-behavior-analysis?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" class="btn">View All ABA Programs</a>
+                                    </div>
+                                </div>
+                                <!-- End Additional Programs Section -->
+                            </td>
+                        </tr>                    </table>
+                    
+                    <!-- Certificate Section - SKIP THIS SECTION IF PROGRAM DOES NOT OFFER CERTIFICATES -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="content-section">
+                                <div class="certificate-section">
+                                    <h2 class="certificate-title">Earn a UCSB Certificate</h2>
+                                    <p class="certificate-description">
+                                        <strong>Choose from multiple certification pathways</strong> to advance your career in applied behavior analysis. Our programs prepare you for roles as Board Certified Behavior Analysts (BCBA), Board Certified Assistant Behavior Analysts (BCaBA), Qualified Behavior Analysts (QBA), and Qualified Autism Service Practitioner-Supervisors (QASP-S). Each program is designed with working professionals in mind, offering <strong>flexible scheduling and research-driven curriculum</strong>.
+                                    </p>                                    <div style="text-align: center;">
+                                        <a href="https://www.professional.ucsb.edu/applied-behavior-analysis?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" class="btn">Explore Certificate</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <!-- CTA Section -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="cta-section">
+                                <h2 class="cta-title">Ready to take the next step?</h2>
+                                <a href="https://www.professional.ucsb.edu/applied-behavior-analysis?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" class="cta-btn">Explore ABA Programs</a>
+                                <p style="margin-top: 20px; font-size: 16px;">
+                                    Questions? <a href="https://www.professional.ucsb.edu/contact?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank" style="color: #febc11 !important; font-weight: bold;">Contact our team</a> for guidance.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <!-- Contact Section -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="contact-section">
+                                <h2 class="section-title">Contact Us</h2>
+                                <div class="contact-card">
+                                    <div class="contact-header">
+                                        <img src="https://www.professional.ucsb.edu/sites/default/files/2025-05/Logo_PaCE_2025_Short.png" 
+                                             alt="UCSB PaCE Logo" class="contact-logo">
+                                        <div class="contact-org">UCSB PaCE</div>
+                                    </div>
+                                    
+                                    <div class="contact-item">
+                                        <span class="contact-label">Office:</span> M-F, 9am–5pm, Kerr Hall (Lobby, 2nd Floor)
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="contact-label">Phone:</span> <a href="tel:805-893-4200" style="color: #1178b5 !important;">805-893-4200</a>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="contact-label">Email:</span> <a href="mailto:help@extension.ucsb.edu" style="color: #1178b5 !important;">help@extension.ucsb.edu</a>
+                                    </div>
+                                    <div class="contact-item">
+                                        <span class="contact-label">Address:</span> <a href="https://www.google.com/maps/place/UCSB+Extension/@34.414512,-119.849064,17z/data=!3m1!4b1!4m2!3m1!1s0x80e940a27c02e345:0xf58f559e103c9a1d" target="_blank" style="color: #1178b5 !important;">2160 Kerr Hall, University of California, Santa Barbara, CA 93106-1110</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <!-- Footer Section -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="footer-section">
+                                <a href="https://www.professional.ucsb.edu/?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank">
+                                    <img src="https://www.professional.ucsb.edu/sites/default/files/2025-05/Logo_PaCE_2025_Full_White_0.png" 
+                                         alt="UCSB PaCE Logo" class="footer-logo">
+                                </a>
+                                  <div class="social-links">
+                                    <a href="https://www.facebook.com/UCSBPaCE?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank">
+                                        <img src="https://www.professional.ucsb.edu/sites/default/files/2025-06/Socials_Facebook_UCSB_Gold.png" alt="Facebook" class="social-icon">
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/pace-at-ucsb/?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank">
+                                        <img src="https://www.professional.ucsb.edu/sites/default/files/2025-06/Socials_LinkedIn.png" alt="LinkedIn" class="social-icon">
+                                    </a>
+                                    <a href="https://www.youtube.com/@ucsbpace?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank">
+                                        <img src="https://www.professional.ucsb.edu/sites/default/files/2025-06/Socials_YouTube_UCSB_Gold.png" alt="YouTube" class="social-icon">
+                                    </a>
+                                    <a href="http://instagram.com/ucsbpace?utm_source=zoho&utm_medium=email&utm_campaign=aba&utm_content=Su25_ABA" target="_blank">
+                                        <img src="https://www.professional.ucsb.edu/sites/default/files/2025-06/Socials_Instagram_UCSB_Gold.png" alt="Instagram" class="social-icon">
+                                    </a>
+                                </div>
+                                
+                                <div class="footer-links">
+                                    <a href="https://www.professional.ucsb.edu/professional-certificates-programs" target="_blank" class="footer-link">Programs</a>
+                                    <a href="https://help.professional.ucsb.edu/" target="_blank" class="footer-link">Student Resources</a>
+                                    <a href="https://www.professional.ucsb.edu/contact" target="_blank" class="footer-link">Contact</a>
+                                    <a href="https://www.ucsb.edu/terms-of-use" target="_blank" class="footer-link">Terms of Use</a>
+                                    <a href="https://www.professional.ucsb.edu/accessibility" target="_blank" class="footer-link">Accessibility</a>
+                                </div>
+                                
+                                <div class="unsubscribe-text">
+                                    You are receiving this email as you signed up for our newsletters.<br>
+                                    Want to change how you receive these emails? 
+                                    <a href="$[LI:UNSUBSCRIBE]$" target="_blank" class="unsubscribe-link">Unsubscribe</a> or 
+                                    <a href="$[LI:SUB_PREF]$" target="_blank" class="unsubscribe-link">Update your preferences</a>.
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
